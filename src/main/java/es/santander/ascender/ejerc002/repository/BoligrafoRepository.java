@@ -4,5 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import es.santander.ascender.ejerc002.model.Boligrafo;
 
 public interface BoligrafoRepository extends JpaRepository<Boligrafo, Long> {
-    // Aquí puedes agregar métodos adicionales si es necesario (por ejemplo, búsqueda por color o nombre)
+    
 }
