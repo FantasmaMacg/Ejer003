@@ -1,10 +1,11 @@
-package es.santander.ascender.ejerc002.Controller;
-import es.santander.ascender.ejerc002.model.Boligrafo;
-import es.santander.ascender.ejerc002.service.BoligrafoService;
+package es.santander.ascender.ejerc003.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import es.santander.ascender.ejerc003.model.Boligrafo;
+import es.santander.ascender.ejerc003.service.BoligrafoService;
 
 import java.util.List;
 
@@ -45,6 +46,11 @@ public class BoligrafoController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         boligrafoService.delete(id);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    @DeleteMapping
+    public ResponseEntity<Void> deleteAll() {
+        boligrafoService.deleteAll();
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

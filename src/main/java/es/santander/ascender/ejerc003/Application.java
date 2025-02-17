@@ -1,13 +1,13 @@
-package es.santander.ascender.ejerc002;
+package es.santander.ascender.ejerc003;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Ejerc002Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ejerc002Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
